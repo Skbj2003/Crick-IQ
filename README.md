@@ -29,13 +29,13 @@ CricIQ turns 278,000+ real IPL ball-by-ball deliveries into actionable tactical 
 
 ```
 criciq/
-├── app.py                  # Streamlit frontend — 7 analytical tabs
+├── app.py                  # Streamlit frontend 
 ├── analytics.py            # Phase, form, and bowler analysis queries
 ├── predictor.py            # Gradient Boosting score prediction
 ├── simulator.py            # Monte Carlo match simulation engine
 ├── local_ai.py             # AI: Ollama → Gemini → rule-based NLP
 ├── agent.py                # Gemini tool-use agent with 6 DB tools
-├── squad_fetcher.py        # Live 2026 IPL squads (Cricinfo + fallback)
+├── squad_fetcher.py        # Live 2026 IPL squads (Cricinfo)
 ├── setup_db.py             # Build DuckDB from Cricsheet YAML files
 ├── fetch_squad_images.py   # Download player headshots
 └── build_player_images.py  # Build player → Cricinfo ID mapping
