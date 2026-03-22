@@ -1,15 +1,4 @@
-"""
-setup_db.py
-───────────
-Rebuilds ipl_tactics.db from your /ipl YAML folder.
 
-Fixes vs original:
-  1. Season: old YAMLs (2008-2012) have NO 'season' key — extracts year from 'dates' instead.
-             Also handles: "2023", "2023/24", ["2023/24"], 2023 (int).
-  2. Runs:   old YAMLs use runs.batsman, new ones use runs.batter — checks both.
-  3. Wicket: new YAMLs use 'wickets' (list), old use 'wicket' (dict) — handles both.
-  4. Striker key: old='batsman', new='striker' — checks both.
-"""
 
 import duckdb
 import yaml
