@@ -6,7 +6,7 @@
 
 ## Overview
 
-CricIQ turns 278,000+ real IPL ball-by-ball deliveries into actionable tactical insights. It combines classical statistical analysis with modern ML models and an AI chat interface that works entirely offline via Ollama.
+CricIQ turns 278,000+ real IPL ball-by-ball deliveries into actionable tactical insights. It combines classical statistical analysis with modern ML models and an AI chat interface .
 
 ---
 
