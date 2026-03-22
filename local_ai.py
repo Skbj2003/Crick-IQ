@@ -1,17 +1,4 @@
-"""
-local_ai.py
-───────────
-AI chat that works with ZERO external dependencies.
 
-Priority order:
-  1. Gemini API  (if key provided)
-  2. Ollama      (if running locally — ollama.ai)
-  3. Rule-based  (always works — pure Python + DuckDB)
-
-The rule-based engine parses natural language questions,
-runs the right SQL, and formats a human-readable answer.
-No ML, no API, no internet needed.
-"""
 
 import re
 import duckdb
