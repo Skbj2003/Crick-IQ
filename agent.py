@@ -1,25 +1,11 @@
-"""
-agent.py
-────────
-IPL Tactical AI Agent — supports BOTH:
-  • Google Gemini  (FREE tier — gemini-2.5-flash-preview-04-17)
-  • Anthropic Claude (paid — claude-sonnet)
 
-Same 6 tools, same agentic loop, same answers.
-Switch by passing provider="gemini" or provider="claude" to run_agent().
-
-Install:
-    pip install google-generativeai anthropic
-"""
 
 import json
 import duckdb
 
 DB_PATH = "ipl_tactics.db"
 
-# ─────────────────────────────────────────────────────────────────────────────
-# TOOL DEFINITIONS — Claude format (Anthropic)
-# ─────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────
 TOOLS_CLAUDE = [
     {
         "name": "player_matchup",
@@ -128,9 +114,6 @@ TOOLS_CLAUDE = [
 ]
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# TOOL DEFINITIONS — Gemini format
-# ─────────────────────────────────────────────────────────────────────────────
 def _build_gemini_tools():
     """Convert TOOLS_CLAUDE to google-generativeai Tool format."""
     import google.generativeai as genai
